@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transcripts — Creative Strategist Breakthrough — Sean Ferres</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--panel:#f8fafc;--bg:#eef0f3;
+ --accent:#4f46e5;--good:#059669;--warn:#ea580c;--bad:#9f1239}
+@media(prefers-color-scheme:dark){:root{--ink:#e8eaed;--muted:#9aa3b2;--line:#2a3140;
+ --panel:#151a23;--bg:#0d1117;--accent:#818cf8}}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+ -webkit-font-smoothing:antialiased;line-height:1.55}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header.top{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.topin{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:26px;height:60px}
+.brand{font-size:15px;font-weight:600;white-space:nowrap}
+.brand span{color:var(--muted);font-weight:400}
+nav.main{display:flex;gap:20px;overflow-x:auto;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap;
+ padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{color:var(--ink)}
+nav.main a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.hero{padding:48px 0 26px}
+.kick{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.hero h1{font-size:40px;margin-bottom:14px;line-height:1.15}
+.hero p{font-size:17px;color:var(--muted);max-width:820px}
+section{padding:26px 0}
+h2.sec{font-size:22px;margin-bottom:16px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{font-size:15px;margin-bottom:7px}
+.card p{font-size:14px;color:var(--muted)}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.stat .n{font-size:26px;font-weight:600;letter-spacing:-.03em}
+.stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-top:3px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+th,td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;
+ border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.good{color:var(--good);border-color:var(--good)}
+.tag.warn{color:var(--warn);border-color:var(--warn)}
+.tag.bad{color:var(--bad);border-color:var(--bad)}
+figure{background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+figure img{width:100%;display:block;background:#000;cursor:zoom-in}
+figcaption{padding:8px 10px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+figcaption b{color:var(--ink);font-weight:600}
+details{background:var(--panel);border:1px solid var(--line);border-radius:9px;margin-bottom:9px}
+summary{padding:12px 15px;cursor:pointer;font-size:14px;font-weight:500;list-style:none;
+ display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary .meta{font-size:12px;color:var(--muted);font-weight:400;white-space:nowrap}
+details .body{padding:0 15px 15px;font-size:14.5px;line-height:1.72;color:var(--ink)}
+details .body p{margin-bottom:12px}
+.ts{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;font-size:12.5px}
+.searchbar{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:9px;
+ background:var(--panel);color:var(--ink);font-size:14.5px;margin-bottom:14px;font-family:inherit}
+.note{border-left:3px solid var(--accent);padding:11px 15px;background:var(--panel);
+ border-radius:0 9px 9px 0;font-size:14px;margin-bottom:13px}
+.note.warn{border-left-color:var(--warn)}
+footer{padding:36px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:34px}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;align-items:center;
+ justify-content:center;z-index:99;cursor:zoom-out;padding:20px}
+#lb img{max-width:100%;max-height:92vh;object-fit:contain}
+#lb .cap{position:fixed;bottom:14px;left:0;right:0;text-align:center;color:#cbd5e1;font-size:13px;padding:0 20px}
+</style></head><body>
+<header class="top"><div class="topin">
+<div class="brand">Sean Ferres Copy MBA CMB <span>swipe</span></div>
+<nav class="main"><a href="index.html" class="">Overview</a><a href="analysis.html" class="">Analysis</a><a href="board.html" class="">Wired board</a><a href="pages.html" class="">Funnel pages</a><a href="ads.html" class="">Ads</a><a href="transcripts.html" class="on">Transcripts</a><a href="videos.html" class="">Video library</a><a href="copybank.html" class="">Copy bank</a></nav></div></header>
+<div class="wrap">
+<div class="hero"><div class="kick">Verbatim</div><h1>Transcripts</h1>
+<p>Every word, timestamped. Search filters across all of them at once.</p></div>
+<section><input id="tsearch" class="searchbar" placeholder="Search every transcript…">
+<h2 class="sec">VSL — Creative Strategist Breakthrough, 9m 13s, 2,212 words</h2><details class="tr"><summary>Sean Ferres - Copy MBA VSL (go.seanferres.com)<span class="meta">00:09:12 · 2,212 words</span></summary><div class="body"><p><span class="ts">[00:00:00]</span> If you&#x27;re a copywriter and your feed is full of &quot;I just landed an 8k a month creative strategist client&quot; posts, while you&#x27;re still pitching thousand-dollar projects and getting ghosted, wondering what the hell you&#x27;re missing, you&#x27;re not crazy. Something huge shifted in advertising last year, and most copywriters completely missed it. If you&#x27;re wondering how creative strategists became the hottest job in copywriting seemingly overnight, here&#x27;s a 30-second crash course. Zuck burned 80 billion dollars on the metaverse, it collapsed, and you redirected all that AI computing power into rebuilding Facebook&#x27;s ad algorithm. The new ad engine, called Andromeda, doesn&#x27;t need manual targeting anymore. It has a scary amount of data on everyone. I don&#x27;t know exactly who to show ads to. That&#x27;s how you end up here watching this. What it needs now is volume. Brands that used to run five ads now need 25 to 50 unique ad creatives per campaign just to launch. So overnight, businesses stopped looking for a copywriter and started hiring people who can own the entire creative system end-to-end. Research, ideation, scripting, production, performance, and iteration. That role is called a, you guessed it, creative strategist. And let me tell you, the demand is unlike anything I have ever seen in my eight years as a copywriter. And we&#x27;ve been teaching this since right after the Andromeda update rolled out long before everyone started slapping creative strategists in their bio. For the last three years, we&#x27;ve all been told AI would kill copywriters. Now suddenly, we&#x27;re the most in-demand operators in the whole game. Literally, as I sat down to film this, one of our students, Logan, posted in our group that he just landed an $8,000 a month creative strategist role on top of the $4,400 ad project he closed last week. That&#x27;s over 12K in new business in a single week. That&#x27;s what happens when you&#x27;re in the right place at the right time. Right now, brands are scrambling to plug the Andromeda hole in their ad accounts.</p><p><span class="ts">[00:01:32]</span> They&#x27;re not going to sit around for six months bleeding money. They&#x27;re hiring creative strategist now this month, this week, not next year. The people who step into this over the next few months will lock in the best clients. And the ones who wait will be fighting for scraps. And if you don&#x27;t know me, my name is Sean Ferris. I run a 10 week program that helps copywriters step into this role and secure consistent 5%K months from a small roster of premium clients. Keep watching and I&#x27;ll show you exactly how. Here&#x27;s where most copywriters are at right now. They&#x27;re still playing the old game. Maybe you&#x27;ve done everything the gurus told you. Blasted call DMs sent 100 messages a day and the replies just didn&#x27;t come. Maybe you&#x27;ve seen clients celebrating record months while you look at your strike payouts thinking there&#x27;s a zero missing here. Or maybe you&#x27;re living in constant anxiety because your income looks like a fucking heart rate monitor. 4K, 1K, 8K, 3K. And then you open Twitter and see newer and frankly worse copywriters than you, landing 5K, 10K creative strategist retainers with businesses DMing them first while you&#x27;re still unsuccessfully cold pitching. You wonder if you missed a window. And to make it worse, every month, thousands of new copywriters flood the market blasting the same inboxes with the same tired messages. The window to get ahead of this is not getting wider. And honestly, if all this pisses you off, I don&#x27;t blame you one bit. You&#x27;re not some newbie looking for a magic button. You&#x27;ve actually done the work, which is exactly why watching beginners blow past you stings so much.</p><p><span class="ts">[00:02:45]</span> Because to make this shift on your own, you need to rebuild your positioning from scratch, design and offer businesses actually pay high four figure retainers for, and build a client acquisition system that brings inbound leads rather than chasing people cold, all while working to maintain your current income. Now I need to confess because there&#x27;s a selfish reason I&#x27;m telling you all this. See, I&#x27;m in the trenches spending tens of thousands a month on meta ads for my own offers, and my network is full of seven to nine figure founders doing the same. I get hit up constantly. Do you know any good ad copywriters or creative strategists? A big reason why I&#x27;m actually running the creative strategist breakthrough is to train the people that I want to hire or refer. So if you graduate and your ads are good enough, you&#x27;ll have the chance to create for my campaigns and for brands in my network. And yes, when we test your stuff, we will pay you and you get real performance data for your portfolio. Now there&#x27;s no guarantees you&#x27;ll be hired obviously, but you&#x27;d be shocked how few people actually show up and do the work, which means if you do, your chances of getting these opportunities are a lot better than you think. That&#x27;s the selfish reason I&#x27;m doing this.</p><p><span class="ts">[00:03:40]</span> Now here&#x27;s what makes a creative strategist breakthrough completely different from anything else out there. Most programs teach you to write better copy or send more cold outreach. We do something entirely different. We move you to a new role the market is starving for. First, we reposition you as a creative strategist, not a copywriter for hire. Just stepping into a role businesses are desperate to fill right now. No kidding, some of our students updated their bio to creative strategist and had brands damning them directly within days. That&#x27;s how hot the demand is right now. Then we give you our reverse outreach system. Most copywriters blast cold messages to everyone hoping to catch the 3% of businesses that are looking to hire our system only targets businesses already running paid ads already spending money and actively seeking solutions to the exact problems you can solve. Our inbox onto AI automatically gets you onto the email list of dozens of ad spending businesses every day in the niches you care about. They email you first with their offers and problems. You just hit reply using our battle tested scripts. That&#x27;s how our students are getting five to 20% reply rates when the industry average is under 1%. We also give you copy pro our custom AI trained on $300 million worth of winning campaigns to work lines faster and clients stick and you&#x27;re not doing this alone. You get live coaching with a team that sold over $200 million with their copy plus a full library of proven offers outreach closing and real world client conversation examples. So you never start guessing what to say or do next. This system has taken us seven years to perfect and I&#x27;m so confident in it that I guarantee if you actually implement you&#x27;ll make at least $5,000 in new income within 10 weeks or we&#x27;ll keep working with you for free until you do. Now this isn&#x27;t a lottery ticket for people with no skill no work ethic and no income it is a force multiplier for copywriters who are already serious about this. I want to move up fast.</p><p><span class="ts">[00:05:16]</span> If that resonates click the link below and apply for a game plan call. On the call we&#x27;ll look at where you are now map out how creative strategy fits into your situation and if it&#x27;s a fit show you how we can help you implement it. Now this is not a free consulting session it&#x27;s for copywriters who are serious about riding this wave now not someday. Button&#x27;s right below this video. Let me show you what this actually looks like in real life. This is the same system that&#x27;s already held 84 copywriters hit a six figure a year income and a handful even cracked seven. Sam came to us charging $300 per advertorial and grinding volume at 15k a month. Seven months after working with us he got paid $49,000 from one client for creative strategy work. The month after that he took home $78,000 in income. Now if you think that&#x27;s a cherry picked result here&#x27;s what typical looks like. AJ came in with $1,000 a month client. Three months later he was at 10k a month of ad creative just by switching his offer pricing and client engine to what we teach and side note his stints turned one of those wins into a profit share deal that pays him seven figures a year. Now I&#x27;m absolutely not saying you&#x27;re gonna come in here and start making seven figures a year if that&#x27;s what you&#x27;re expecting don&#x27;t apply but it does show you how big this opportunity is and what&#x27;s possible at the extreme if you absolutely crush this. On the other end of the spectrum even if you only land one simple 2k a month retainer using our reverse outreach system like Charney did that one client alone would pay for your entire program investment within two months and give you a solid baseline to build from. Now you might be thinking I&#x27;ve already bought programs and none of them got me clients and you&#x27;re probably right most of these programs taught you to write better copy or send more cold messages neither solve the real problem you&#x27;re positioned as a commodity with no system for getting in front of big money clients. That&#x27;s what I&#x27;ve spent the last seven years solving I&#x27;ve personally spent 1.4 million dollars of my own money on paid ads and made back over six million</p><p><span class="ts">[00:06:57]</span> from my office and collectively my coaching team has sold over 200 million dollars worth of products and services with our ads emails and funnels. We&#x27;re all in the trenches doing this every single day. Now you might also be thinking what if I don&#x27;t make the investment back? Well one client priced correctly as a creative strategist covers more than the entire cost of this program. Rigid will prove that in two months. Now obviously this isn&#x27;t free it&#x27;s a real program with real coaching but you also don&#x27;t need a mountain of cash sitting in the bank to get started. We have flexible payment options and even a small starter client more than covers a monthly payment. The real cost is waiting three to six months and completely missing the aggressive hiring spree that is happening right now. Now this isn&#x27;t for everyone if you&#x27;re not willing to commit 10 to 12 focused hours a week for 10 weeks this won&#x27;t work. If you&#x27;re still bouncing between shiny objects this isn&#x27;t the right fit and if you don&#x27;t have a stable source of income yet either from your job or from copy this isn&#x27;t for you yet. But if you&#x27;re already making a few grand a month from copy or maybe still at a job you can see this opportunity for what it is and you want a proven system to step in before everyone and their nan is a creative strategist click the button below and apply. And at the risk of sounding hypey this isn&#x27;t some next year opportunity. Right now brands whose ads have been wrecked by Andromeda are bleeding cash every single day. And let me tell you when you&#x27;re losing thousands a week on ads you don&#x27;t sit around journaling about it you hire someone this week to fix it. That&#x27;s why you&#x27;re seeing five to ten k a month retainers getting thrown at creative strategist right now. There are eight million businesses running ads on metal and a huge chunk of them are in broken leg mode. They need help yesterday. They&#x27;re gonna wait around six months to plug that hole. Over the next 30 to 90 days a wave of serious brands are all going to pick their creative strategist and settle in with them for the next 12 plus months. The people who move on this now will scoop up the highest paying lowest friction clients. That is always how these things go. And then once you keep thinking about it will show up after all the best chairs are already taken. And the same screenshots that fire you up today are gonna feel like a punch</p><p><span class="ts">[00:08:40]</span> in the gut if you&#x27;re still stuck in the same place. Now at this point you already know if you&#x27;re serious about stepping into this or not. If you are apply and if you&#x27;re still looking for reasons to doubt this then it probably isn&#x27;t for you. And there&#x27;s no shame in that. You can stick to being a copywriter that&#x27;s totally fine. But if you want to be one of the copywriters who cashes in on this wave instead of one of the ones watching from the sidelines click the button below and apply for the creative strategist breakthrough. Worst case you walk away with a clear plan. Best case this ends up being the moment your whole copy career shifts. Now we only work with a small handful of copywriters each month so we can actually get everyone results. So click the button below apply while spots are still open and I&#x27;ll see you on the other side.</p></div></details></section>
+<footer>Captured 6 &amp; 11 August 2026. Evidence in <code>~/UNDERGROUND_FUNNELS_SSOT</code>
+and <code>~/Downloads/SEAN_FERRES_Swipe</code>. Built with the <code>/swipe</code> skill.<br>
+Competitor research. Not for redistribution.</footer></div>
+<div id="lb"><img alt=""><div class="cap"></div></div>
+<script>
+document.addEventListener('click',function(e){
+  if(e.target.tagName==='IMG'&&e.target.closest('figure')){
+    var lb=document.getElementById('lb');
+    lb.querySelector('img').src=e.target.dataset.full||e.target.src;
+    var fc=e.target.closest('figure').querySelector('figcaption');
+    lb.querySelector('.cap').textContent=fc?fc.textContent.trim():'';
+    lb.style.display='flex';
+  } else if(e.target.closest('#lb')){document.getElementById('lb').style.display='none';}
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape')document.getElementById('lb').style.display='none';
+});
+function wireSearch(id,sel){
+  var b=document.getElementById(id); if(!b)return;
+  b.addEventListener('input',function(){
+    var q=b.value.toLowerCase();
+    document.querySelectorAll(sel).forEach(function(el){
+      el.style.display = !q || el.textContent.toLowerCase().indexOf(q)>-1 ? '' : 'none';
+    });
+  });
+}
+wireSearch('tsearch','details.tr');
+wireSearch('ssearch','figure.sl');
+</script></body></html>

@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ads — Creative Strategist Breakthrough — Sean Ferres</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--panel:#f8fafc;--bg:#eef0f3;
+ --accent:#4f46e5;--good:#059669;--warn:#ea580c;--bad:#9f1239}
+@media(prefers-color-scheme:dark){:root{--ink:#e8eaed;--muted:#9aa3b2;--line:#2a3140;
+ --panel:#151a23;--bg:#0d1117;--accent:#818cf8}}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+ -webkit-font-smoothing:antialiased;line-height:1.55}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header.top{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.topin{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:26px;height:60px}
+.brand{font-size:15px;font-weight:600;white-space:nowrap}
+.brand span{color:var(--muted);font-weight:400}
+nav.main{display:flex;gap:20px;overflow-x:auto;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap;
+ padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{color:var(--ink)}
+nav.main a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.hero{padding:48px 0 26px}
+.kick{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.hero h1{font-size:40px;margin-bottom:14px;line-height:1.15}
+.hero p{font-size:17px;color:var(--muted);max-width:820px}
+section{padding:26px 0}
+h2.sec{font-size:22px;margin-bottom:16px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{font-size:15px;margin-bottom:7px}
+.card p{font-size:14px;color:var(--muted)}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.stat .n{font-size:26px;font-weight:600;letter-spacing:-.03em}
+.stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-top:3px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+th,td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;
+ border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.good{color:var(--good);border-color:var(--good)}
+.tag.warn{color:var(--warn);border-color:var(--warn)}
+.tag.bad{color:var(--bad);border-color:var(--bad)}
+figure{background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+figure img{width:100%;display:block;background:#000;cursor:zoom-in}
+figcaption{padding:8px 10px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+figcaption b{color:var(--ink);font-weight:600}
+details{background:var(--panel);border:1px solid var(--line);border-radius:9px;margin-bottom:9px}
+summary{padding:12px 15px;cursor:pointer;font-size:14px;font-weight:500;list-style:none;
+ display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary .meta{font-size:12px;color:var(--muted);font-weight:400;white-space:nowrap}
+details .body{padding:0 15px 15px;font-size:14.5px;line-height:1.72;color:var(--ink)}
+details .body p{margin-bottom:12px}
+.ts{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;font-size:12.5px}
+.searchbar{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:9px;
+ background:var(--panel);color:var(--ink);font-size:14.5px;margin-bottom:14px;font-family:inherit}
+.note{border-left:3px solid var(--accent);padding:11px 15px;background:var(--panel);
+ border-radius:0 9px 9px 0;font-size:14px;margin-bottom:13px}
+.note.warn{border-left-color:var(--warn)}
+footer{padding:36px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:34px}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;align-items:center;
+ justify-content:center;z-index:99;cursor:zoom-out;padding:20px}
+#lb img{max-width:100%;max-height:92vh;object-fit:contain}
+#lb .cap{position:fixed;bottom:14px;left:0;right:0;text-align:center;color:#cbd5e1;font-size:13px;padding:0 20px}
+</style></head><body>
+<header class="top"><div class="topin">
+<div class="brand">Sean Ferres Copy MBA CMB <span>swipe</span></div>
+<nav class="main"><a href="index.html" class="">Overview</a><a href="analysis.html" class="">Analysis</a><a href="board.html" class="">Wired board</a><a href="pages.html" class="">Funnel pages</a><a href="ads.html" class="on">Ads</a><a href="transcripts.html" class="">Transcripts</a><a href="videos.html" class="">Video library</a><a href="copybank.html" class="">Copy bank</a></nav></div></header>
+<div class="wrap">
+<div class="hero"><div class="kick">360 lifetime records &middot; 39 live</div>
+<h1>The ad account</h1>
+<p>Parsed out of the public Meta Ad Library graphql stream on 11 August 2026, from the
+<b>Sean Ferres</b> advertiser page (<code>438598856674850</code>). The older
+<b>Copy MBA</b> page (<code>108248635378423</code>) is running <b>zero</b> ads.
+gethookd has no usable brand record for him, so nothing here comes from a paid tool.</p></div>
+
+<section><div class="note"><b>Records, not creatives.</b> Meta counts a re-upload as a new
+record. That is what makes the bundling measurable: <b>360 records</b> across the whole
+history of the account resolve to only <b>24 distinct bodies of copy</b>.</div></section>
+
+<section><h2 class="sec">Every concept he has ever run</h2>
+<div class="tablewrap"><table>
+<tr><th>&nbsp;</th><th>Records</th><th>Live</th><th>Ran</th><th>Opening copy</th></tr>
+<tr><td><span class="tag good">live</span></td><td><b>250</b></td><td><b>30</b></td><td class='small'>2026-01 &rarr; 2026-05</td><td>Here&#x27;s a fun little conspiracy theory that&#x27;s actually true:  Big clients use your low price as a filter…  To screen you OUT.  Your $2k quote doesn&#x27;t scream &quot;what a bargain!&quot;  It screams &quot;I&#x27;m new, risky, and about to learn on your &hellip;</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>24</b></td><td><b>0</b></td><td class='small'>2024-11 &rarr; 2025-09</td><td>— dynamic-creative template, body pulled from the product feed at delivery. Meta stores the unrendered variable, so the copy these actually served is not recoverable from the library.</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>18</b></td><td><b>0</b></td><td class='small'>2025-09 &rarr; 2025-10</td><td>AI won’t take your job… if you learn to use it 👇</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>15</b></td><td><b>0</b></td><td class='small'>2025-09 &rarr; 2025-10</td><td>Crypto’s window closed. AI is the next gold rush 👇</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>12</b></td><td><b>0</b></td><td class='small'>2025-09 &rarr; 2025-10</td><td>Akhil isn’t a coder or influencer… but AI made him a top earner 👇</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>7</b></td><td><b>0</b></td><td class='small'>2025-10</td><td>This AI baby just stole a million-dollar client from a Fortune 500 company, and it&#x27;s not even real. But the results are…  While big corporations are spending millions on boring talking head ads that get skipped, small businesses u&hellip;</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>5</b></td><td><b>0</b></td><td class='small'>2025-10</td><td>Ever seen those viral AI videos with Bigfoot walking around the forest vlogging? You wouldn&#x27;t believe how much those ads are printing...  New Sapience raised a million bucks for their startup with AI video ads and One Peak explode&hellip;</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>4</b></td><td><b>0</b></td><td class='small'>2025-10</td><td>Sick of seeing broccoli-haired teens making 100K a month selling fartcoins on TikTok?  Looking for an actual, legit way to cash in on the AI gold rush?  Well, here it is: AI video ads.  It’s the simplest way to get started making &hellip;</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>4</b></td><td><b>0</b></td><td class='small'>2025-10</td><td>This viral robot chef ad cost me $3 to make, I spent $192 running it, and it landed me a 5K client.  Total time invested? 10 minutes. Video editing background? Zero. Tech background? Zero.  Here&#x27;s the crazy part - I have dozens of&hellip;</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>3</b></td><td><b>0</b></td><td class='small'>2025-09 &rarr; 2025-10</td><td>Andrew used AI to go from $4k to $8k retainers 👇</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>2</b></td><td><b>0</b></td><td class='small'>2025-09</td><td>I&#x27;m looking for 10 people who want to learn how to build a 4k-10k/mo Al copywriting business in the next 10 weeks.  No experience required. We&#x27;ll teach you everything step by step.  DM me &#x27;10k&#x27; for info 👇🏼</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>2</b></td><td><b>0</b></td><td class='small'>2025-09</td><td>Ready to make 4k-10k/mo writing simple emails with Al?  We&#x27;re coaching 10 beginners over the next 10 weeks.  ✅ No writing or tech background needed ✅ Learn once, earn for life  DM me &#x27;10k&#x27; for details 👇🏼</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>2</b></td><td><b>0</b></td><td class='small'>2025-09</td><td>If you can write an email, you can build a $4k-10k/mo business.  I&#x27;m mentoring 10 people to do it with Al, step-by-step.  ✅ No experience? Perfect ✅ Serious about growth? Even better  DM me &#x27;10k&#x27; for details 👇🏼</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>2</b></td><td><b>0</b></td><td class='small'>2025-09</td><td>Thousands are using Al + email to build 10k/mo incomes. Want In?  We&#x27;re mentoring 10 beginners over the next 10 weeks...  ✅ No tech or writing skills needed ✅ Step-by-step support ✅ Built to get you earning fast  DM me &#x27;10k&#x27; for d&hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>A few weeks ago I caught up with my mate Matt Volkwyn in Cape Town.  We went for a long sunset walk up Table Mountain and talked about everything… marketing, fake gurus, ramen, the meaning of life. The next morning, before my flig&hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-08</td><td>Most copywriters think going from copywriter to creative strategist means starting over.  Learning media buying. Dashboards. Some whole new skill stack.  It doesn&#x27;t.  A creative strategist is just an ad copywriter who owns perform&hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>When Jack Woods joined my program back in 2020, he was a broke father with another kid on the way.  Making about $20k a year. Stressing about how to put food on the table. Literally counting spare change for milk and bread.  After&hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>This one&#x27;s a little bit insane.  I just finished interviewing arguably my most impressive success story yet: AJ, who went from $10k/mo to his first $100k month in just seven months.  That&#x27;s $100k INCOME. $100k cash in the bank, in&hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>Sam went from $15k to $130,000 in a single month as a freelance copywriter/creative strategist... from just ONE client.  You&#x27;ve probably heard me talk about Sam before. He&#x27;s the advertorial guy who quietly wrote $50 million worth &hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>This one&#x27;s a bit insane.  My student Akhil went from zero to $25k/month in 60 days, running AI automations that do most of the work for him.  He built a simple custom GPT for each of his 6 clients, so now he writes a full week of &hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>Most copywriters are freaking out for one dumb reason: they&#x27;re still selling &quot;words&quot; while the market is screaming for creative strategy.  So here are 5 untapped creative strategist niches that are quietly printing $5k-12k/mo reta&hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>90% of copywriters are grinding 8+ hours a day on manual outreach and wondering why they&#x27;re broke and burnt out by month two.  The smart ones already switched games: repositioned as creative strategists, and built a system that do&hellip;</td></tr><tr><td><span class="tag bad">dead</span></td><td><b>1</b></td><td><b>0</b></td><td class='small'>2025-10</td><td>Every year, the 8 million businesses on Facebook&#x27;s advertising platform get absolutely nuked by skyrocketing ad costs 🪦  And this year, it’s shaping up to be a bloodbath.  In two weeks, ad prices are about to explode as every man &hellip;</td></tr><tr><td><span class="tag good">live</span></td><td><b>1</b></td><td><b>1</b></td><td class='small'>2026-07</td><td>You know Alex Hormozi.... The $100M Offers guy everyone quotes on Instagram.  You don&#x27;t know the copywriter-turned-CMO who helped him build the brand from the shadows, scaled companies past 100M, and engineered some of the biggest&hellip;</td></tr></table></div></section>
+
+<section><h2 class="sec">By launch month</h2>
+<p>Survival has to be read within a cohort or age fakes the finding. The row that matters is
+<b>May 2026 at 100%</b> &mdash; same copy as the dead January&ndash;March records, three months
+old, and every one still running.</p>
+<div class="tablewrap"><table>
+<tr><th>Month</th><th>Records</th><th>Still live</th><th>Survival</th></tr>
+<tr><td>2024-11</td><td>4</td><td>0</td><td>0%</td></tr><tr><td>2024-12</td><td>2</td><td>0</td><td>0%</td></tr><tr><td>2025-08</td><td>9</td><td>0</td><td>0%</td></tr><tr><td>2025-09</td><td>60</td><td>0</td><td>0%</td></tr><tr><td>2025-10</td><td>26</td><td>0</td><td>0%</td></tr><tr><td>2026-01</td><td>62</td><td>0</td><td>0%</td></tr><tr><td>2026-02</td><td>62</td><td>0</td><td>0%</td></tr><tr><td>2026-03</td><td>91</td><td>0</td><td>0%</td></tr><tr><td>2026-04</td><td>7</td><td>2</td><td>28%</td></tr><tr><td>2026-05</td><td>28</td><td>28</td><td>100%</td></tr><tr><td>2026-07</td><td>8</td><td>8</td><td>100%</td></tr><tr><td>2026-08</td><td>1</td><td>1</td><td>100%</td></tr></table></div></section>
+
+<section><h2 class="sec">Format mix</h2>
+<div class="tablewrap"><table><tr><th>Format</th><th>Records</th></tr><tr><td>VIDEO</td><td>258</td></tr><tr><td>IMAGE</td><td>77</td></tr><tr><td>DCO</td><td>21</td></tr><tr><td>?</td><td>4</td></tr></table></div>
+<p class="small">Lines up with the Typeform title, which calls the whole build
+<code>CS Breakthrough App Master Funnel v1 - <b>Talking Head</b></code>.</p></section>
+<footer>Captured 6 &amp; 11 August 2026. Evidence in <code>~/UNDERGROUND_FUNNELS_SSOT</code>
+and <code>~/Downloads/SEAN_FERRES_Swipe</code>. Built with the <code>/swipe</code> skill.<br>
+Competitor research. Not for redistribution.</footer></div>
+<div id="lb"><img alt=""><div class="cap"></div></div>
+<script>
+document.addEventListener('click',function(e){
+  if(e.target.tagName==='IMG'&&e.target.closest('figure')){
+    var lb=document.getElementById('lb');
+    lb.querySelector('img').src=e.target.dataset.full||e.target.src;
+    var fc=e.target.closest('figure').querySelector('figcaption');
+    lb.querySelector('.cap').textContent=fc?fc.textContent.trim():'';
+    lb.style.display='flex';
+  } else if(e.target.closest('#lb')){document.getElementById('lb').style.display='none';}
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape')document.getElementById('lb').style.display='none';
+});
+function wireSearch(id,sel){
+  var b=document.getElementById(id); if(!b)return;
+  b.addEventListener('input',function(){
+    var q=b.value.toLowerCase();
+    document.querySelectorAll(sel).forEach(function(el){
+      el.style.display = !q || el.textContent.toLowerCase().indexOf(q)>-1 ? '' : 'none';
+    });
+  });
+}
+wireSearch('tsearch','details.tr');
+wireSearch('ssearch','figure.sl');
+</script></body></html>

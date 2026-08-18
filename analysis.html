@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analysis — Creative Strategist Breakthrough — Sean Ferres</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--panel:#f8fafc;--bg:#eef0f3;
+ --accent:#4f46e5;--good:#059669;--warn:#ea580c;--bad:#9f1239}
+@media(prefers-color-scheme:dark){:root{--ink:#e8eaed;--muted:#9aa3b2;--line:#2a3140;
+ --panel:#151a23;--bg:#0d1117;--accent:#818cf8}}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+ -webkit-font-smoothing:antialiased;line-height:1.55}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header.top{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.topin{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:26px;height:60px}
+.brand{font-size:15px;font-weight:600;white-space:nowrap}
+.brand span{color:var(--muted);font-weight:400}
+nav.main{display:flex;gap:20px;overflow-x:auto;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap;
+ padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{color:var(--ink)}
+nav.main a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.hero{padding:48px 0 26px}
+.kick{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.hero h1{font-size:40px;margin-bottom:14px;line-height:1.15}
+.hero p{font-size:17px;color:var(--muted);max-width:820px}
+section{padding:26px 0}
+h2.sec{font-size:22px;margin-bottom:16px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{font-size:15px;margin-bottom:7px}
+.card p{font-size:14px;color:var(--muted)}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.stat .n{font-size:26px;font-weight:600;letter-spacing:-.03em}
+.stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-top:3px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+th,td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;
+ border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.good{color:var(--good);border-color:var(--good)}
+.tag.warn{color:var(--warn);border-color:var(--warn)}
+.tag.bad{color:var(--bad);border-color:var(--bad)}
+figure{background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+figure img{width:100%;display:block;background:#000;cursor:zoom-in}
+figcaption{padding:8px 10px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+figcaption b{color:var(--ink);font-weight:600}
+details{background:var(--panel);border:1px solid var(--line);border-radius:9px;margin-bottom:9px}
+summary{padding:12px 15px;cursor:pointer;font-size:14px;font-weight:500;list-style:none;
+ display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary .meta{font-size:12px;color:var(--muted);font-weight:400;white-space:nowrap}
+details .body{padding:0 15px 15px;font-size:14.5px;line-height:1.72;color:var(--ink)}
+details .body p{margin-bottom:12px}
+.ts{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;font-size:12.5px}
+.searchbar{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:9px;
+ background:var(--panel);color:var(--ink);font-size:14.5px;margin-bottom:14px;font-family:inherit}
+.note{border-left:3px solid var(--accent);padding:11px 15px;background:var(--panel);
+ border-radius:0 9px 9px 0;font-size:14px;margin-bottom:13px}
+.note.warn{border-left-color:var(--warn)}
+footer{padding:36px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:34px}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;align-items:center;
+ justify-content:center;z-index:99;cursor:zoom-out;padding:20px}
+#lb img{max-width:100%;max-height:92vh;object-fit:contain}
+#lb .cap{position:fixed;bottom:14px;left:0;right:0;text-align:center;color:#cbd5e1;font-size:13px;padding:0 20px}
+</style></head><body>
+<header class="top"><div class="topin">
+<div class="brand">Sean Ferres Copy MBA CMB <span>swipe</span></div>
+<nav class="main"><a href="index.html" class="">Overview</a><a href="analysis.html" class="on">Analysis</a><a href="board.html" class="">Wired board</a><a href="pages.html" class="">Funnel pages</a><a href="ads.html" class="">Ads</a><a href="transcripts.html" class="">Transcripts</a><a href="videos.html" class="">Video library</a><a href="copybank.html" class="">Copy bank</a></nav></div></header>
+<div class="wrap">
+<div class="hero"><div class="kick">Teardown</div><h1>Analysis</h1>
+<p>What they do, why it works, and what is worth taking.</p></div>
+<section>
+<div class="note"><b>The one-line read.</b> Ferres runs the <b>simplest funnel in this entire
+swipe file</b> &mdash; ad, VSL, form, call &mdash; and spends all his leverage on the
+<b>lead</b> instead. The Andromeda news event does the work a webinar, an opt-in sequence and a
+countdown timer would normally have to do. That is a trade worth understanding before copying
+either half of it.</div>
+
+<h2 class="sec">The news-event lead, taken apart</h2>
+<p>This is the structure, stripped of his specifics. Every step is a fact the reader can check,
+which is what stops it reading as hype:</p>
+<div class="tablewrap"><table>
+<tr><th>Beat</th><th>What it does</th><th>His version</th></tr>
+<tr><td><b>1. The event</b></td><td>An external, dated, verifiable thing happened</td>
+<td>Meta rebuilt its ad engine. It is called Andromeda.</td></tr>
+<tr><td><b>2. The mechanism</b></td><td>Why the event changes the economics</td>
+<td>It no longer needs manual targeting. It needs volume.</td></tr>
+<tr><td><b>3. The consequence</b></td><td>A concrete, countable new demand</td>
+<td>Brands that ran 5 ads now need 25&ndash;50 creatives per campaign.</td></tr>
+<tr><td><b>4. The vacancy</b></td><td>Who the market must now pay, and what they are called</td>
+<td>Nobody in-house can do it. The role is &ldquo;creative strategist&rdquo;.</td></tr>
+<tr><td><b>5. The closing window</b></td><td>Urgency off the calendar, not off a timer</td>
+<td>&ldquo;Over the next 30&ndash;90 days a wave of brands all pick their person and settle in
+for 12+ months.&rdquo;</td></tr>
+</table></div>
+<p>Step 5 is the one most people get wrong. He never says &ldquo;this offer closes Friday&rdquo;.
+He says the <b>market</b> closes, and puts a plausible horizon on it. Nothing to disprove, nothing
+to expire, and it survives the ad running for eight straight months.</p>
+
+<div class="note"><b>Where this points harder at UGC World than at him.</b> The same event is a
+stronger argument for us. Fifty videos a month is a <b>filming</b> problem before it is a writing
+problem &mdash; a marketing department cannot produce that volume in-house at any price, and a
+studio is too slow. His version needs the reader to accept that copywriting is being repriced.
+Ours only needs them to accept that someone has to hold the camera. That work is already drafted
+in the Copy SSOT inbox as the Andromeda news-event ad.</div>
+
+<h2 class="sec">The ad account, age-controlled</h2>
+<p>Raw survival counts would say his January&ndash;March work was a disaster and his summer work
+is perfect. That is mostly age. What is <i>not</i> age is the May cohort:</p>
+<div class="tablewrap"><table>
+<tr><th>Cohort</th><th>Records</th><th>Still live</th><th>Read</th></tr>
+<tr><td>Nov 2024 &ndash; Oct 2025</td><td>~100</td><td><b>0</b></td>
+<td>The Copy MBA / AI-copywriting era. Dead as a positioning, not just as creative.</td></tr>
+<tr><td>Jan &ndash; Mar 2026</td><td>215</td><td><b>0</b></td>
+<td>The workhorse concept at full bundle volume. Retired, but the concept was not.</td></tr>
+<tr><td>May 2026</td><td>28</td><td><b>28</b></td>
+<td>Same copy, re-uploaded. <b>100% survival at three months old</b> &mdash; this is the
+proof the concept is a winner, not the raw record count.</td></tr>
+<tr><td>Jul &ndash; Aug 2026</td><td>9</td><td><b>9</b></td>
+<td>The unbundled proof layer. Too young to read as survival; read it as a deliberate
+second lane.</td></tr>
+</table></div>
+<p class="small">n = 360 records parsed from the public Ad Library graphql stream on 11 Aug 2026.
+Records, not unique creatives &mdash; Meta counts a re-upload as a new record, which is exactly
+what makes the bundle ratio measurable.</p>
+
+<h2 class="sec">What to take, and what to leave</h2>
+<div class="tablewrap"><table>
+<tr><th>&nbsp;</th><th>Element</th><th>Why</th></tr>
+<tr><td><span class="tag good">TAKE</span></td><td>The news-event lead structure</td>
+<td>Urgency that does not decay and cannot be disproved. Already drafted for us.</td></tr>
+<tr><td><span class="tag good">TAKE</span></td><td>Naming the selfish reason out loud</td>
+<td>Converts &ldquo;buy my course&rdquo; into &ldquo;join my pipeline&rdquo; and kills the
+why-are-you-teaching-this objection before it forms. We have a stronger version of this claim
+than he does, because the placements are real.</td></tr>
+<tr><td><span class="tag good">TAKE</span></td><td>The disclaimed proof ladder</td>
+<td>Extreme / typical / floor, with the extreme explicitly disclaimed. Buys belief for the
+middle number, which is the one that sells.</td></tr>
+<tr><td><span class="tag good">TAKE</span></td><td>Scoped guarantee to a dollar figure</td>
+<td>&ldquo;Free until you make $5,000&rdquo; is cheaper than a refund and reads stronger.</td></tr>
+<tr><td><span class="tag warn">WATCH</span></td><td>One concept, 250 uploads</td>
+<td>Correct for Andromeda, but it means a single point of failure. When that concept fatigues
+he has 23 other bodies in eight months of history to fall back on.</td></tr>
+<tr><td><span class="tag bad">LEAVE</span></td><td>No email capture before the call</td>
+<td>Every non-applicant is lost and must be re-bought. Our funnel captures at registration and
+should keep doing so.</td></tr>
+<tr><td><span class="tag good">TAKE</span></td><td>The 48-minute objection library on the
+confirmed page</td>
+<td>One video per objection, watched between booking and the call. Same pattern as Brook's
+pre-call workshop. This is the highest-leverage thing on this site and we do not have an
+equivalent.</td></tr>
+<tr><td><span class="tag good">TAKE</span></td><td>&ldquo;The price only moves up, so today is
+the lowest it will ever be&rdquo;</td>
+<td>Turns refusing to name a price into a reason to act now. Costs nothing and it is true of
+most programs.</td></tr>
+<tr><td><span class="tag bad">LEAVE</span></td><td>Three offer names in one funnel</td>
+<td>Ad says creative strategist, Calendly says AI-powered copywriter, confirmed page says Copy
+Millions Blueprint, and the investment video says &ldquo;$10k/mo as a copywriter&rdquo;. A
+prospect who watches everything gets four different products. Pick one name and hold it.</td></tr>
+<tr><td><span class="tag bad">LEAVE</span></td><td>The unsourced volume claim</td>
+<td>&ldquo;25&ndash;50 creatives per campaign&rdquo; is <b>his</b> number, repeated without a
+source. If we run the same event we source it or soften it to &ldquo;dozens&rdquo;.</td></tr>
+</table></div>
+
+<h2 class="sec">He version-numbers everything, and it all leaks</h2>
+<p>Two independent naming leaks, both in metadata he did not think anyone would read:</p>
+<div class="tablewrap"><table>
+<tr><th>Where</th><th>What it says</th><th>What it tells you</th></tr>
+<tr><td>Typeform page title</td><td><code>CS Breakthrough App Master Funnel v1 - Talking Head</code></td>
+<td>He versions his funnels and tags them by <b>creative format</b>. &ldquo;Talking Head&rdquo;
+matches 262 of 360 records being video.</td></tr>
+<tr><td>Wistia JSON-LD, &times;9</td><td><code>HAMMER THEM FUNNEL 2.0 - COPYWRITERS 2026</code></td>
+<td>The Feb 2026 build. The AI-copywriter era.</td></tr>
+<tr><td>Wistia JSON-LD, &times;5</td><td><code>HAMMER THEM FUNNEL 3.0 - CS BREAKTHROUGH</code></td>
+<td>Uploaded 14&ndash;16 May 2026. <b>Dates the pivot to the week</b>, and it is the same month
+as the ad cohort that is still 100% alive.</td></tr>
+</table></div>
+<p>Worth internalising as a habit: <b>check the title tag and the video schema on every funnel
+you swipe.</b> CreatorHive named its split test in the <code>&lt;title&gt;</code>; Ferres named
+his whole roadmap in his video metadata. Neither cost anything to find.</p>
+
+<h2 class="sec">Open questions</h2>
+<ul>
+<li>What is the &ldquo;Creative Strategist 101&rdquo; free live training that the DQ ending says
+you were auto-enrolled in? No page for it exists on any captured step.</li>
+<li>What does the post-booking email and SMS sequence actually do? A call is booked as of
+11 Aug, so this should answer itself within days.</li>
+<li>Where exactly does the four-figure number land &mdash; the Q7 bands imply the real spread is
+<b>$2k&ndash;4k for group and $4k+ for 1:1</b>, but that is inference, not evidence.</li>
+<li>Does he run TikTok? A TikTok pixel fires on the confirmed page but every ad we found is Meta.</li>
+</ul>
+</section>
+<footer>Captured 6 &amp; 11 August 2026. Evidence in <code>~/UNDERGROUND_FUNNELS_SSOT</code>
+and <code>~/Downloads/SEAN_FERRES_Swipe</code>. Built with the <code>/swipe</code> skill.<br>
+Competitor research. Not for redistribution.</footer></div>
+<div id="lb"><img alt=""><div class="cap"></div></div>
+<script>
+document.addEventListener('click',function(e){
+  if(e.target.tagName==='IMG'&&e.target.closest('figure')){
+    var lb=document.getElementById('lb');
+    lb.querySelector('img').src=e.target.dataset.full||e.target.src;
+    var fc=e.target.closest('figure').querySelector('figcaption');
+    lb.querySelector('.cap').textContent=fc?fc.textContent.trim():'';
+    lb.style.display='flex';
+  } else if(e.target.closest('#lb')){document.getElementById('lb').style.display='none';}
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape')document.getElementById('lb').style.display='none';
+});
+function wireSearch(id,sel){
+  var b=document.getElementById(id); if(!b)return;
+  b.addEventListener('input',function(){
+    var q=b.value.toLowerCase();
+    document.querySelectorAll(sel).forEach(function(el){
+      el.style.display = !q || el.textContent.toLowerCase().indexOf(q)>-1 ? '' : 'none';
+    });
+  });
+}
+wireSearch('tsearch','details.tr');
+wireSearch('ssearch','figure.sl');
+</script></body></html>
